@@ -96,7 +96,6 @@ function updateTsconfigJson(name: string): Rule {
 		const path = `/${name}/tsconfig.json`;
 		const file = tree.read(path);
 		const comment = file!.toString().match(/\/\*.*/)
-		console.log(comment);
 		
 		const a = file!.toString().replace(/\/\*.*/,'')
 		const json = JSON.parse(a);
@@ -117,8 +116,6 @@ function updateTsconfigJson(name: string): Rule {
 			}
 		};
 		tree.overwrite(path, `${comment}\n${JSON.stringify(json, null, 4)}`);
-		console.log(tree);
-		
 		return tree;
 	};
 }

@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-tailwindcss": {
+      "description": "A blank schematic.",
+      "factory": "./ng-tailwindcss/index#newProject",
+      "schema": "./ng-tailwindcss/schema.json"
+    }
+  }
+}

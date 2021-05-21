@@ -1,5 +1,28 @@
 # Getting Started With Schematics
 
+To build a new project, simply run
+
+```
+schematics .:ng-tailwindcss <project-name> --debug=false
+schematics .:ng-tailwindcss menu-rant --debug=false
+```
+
+Use the article below as a refresher
+
+https://medium.com/@tomastrajan/total-guide-to-custom-angular-schematics-5c50cf90cdb4
+
+
+
+
+
+
+
+
+
+
+
+### DEFAULT MESSAGE
+
 To build a new project, simply run the command below:
 ```bash
 yarn new <project-name>

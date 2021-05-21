@@ -1,10 +1,9 @@
 # Getting Started With Schematics
 
 To build a new project, simply run
-
+<!-- schematics .:ng-tailwindcss menu-rant --debug=false -->
 ```
 schematics .:ng-tailwindcss <project-name> --debug=false
-schematics .:ng-tailwindcss menu-rant --debug=false
 ```
 
 Use the article below as a refresher
@@ -12,9 +11,19 @@ Use the article below as a refresher
 https://medium.com/@tomastrajan/total-guide-to-custom-angular-schematics-5c50cf90cdb4
 
 
+## Build
+Run the command below to compile "build" the project
 
+```
+yarn build
+```
 
+## Development
 
+In order to do further development, run the command below in order to build and setup a watcher that will recompile the code.
+```
+yarn build:watch
+```
 
 
 

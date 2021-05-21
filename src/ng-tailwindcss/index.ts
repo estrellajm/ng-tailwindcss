@@ -74,13 +74,13 @@ function updateAngularJson(name: string): Rule {
 		const json = JSON.parse(file!.toString());
 
 		json.projects[name].architect.build.builder = 'ngx-build-plus:browser';
-		json.projects[name].architect.build.options.extraWebpackConfig = 'webpack.config.js';
+		// json.projects[name].architect.build.options.extraWebpackConfig = 'webpack.config.js';
 		
 		json.projects[name].architect.serve.builder = 'ngx-build-plus:dev-server';
-		json.projects[name].architect.serve.options.extraWebpackConfig = 'webpack.config.js';
+		// json.projects[name].architect.serve.options.extraWebpackConfig = 'webpack.config.js';
 
 		json.projects[name].architect.test.builder = 'ngx-build-plus:karma';
-		json.projects[name].architect.test.options.extraWebpackConfig = 'webpack.config.js';
+		// json.projects[name].architect.test.options.extraWebpackConfig = 'webpack.config.js';
 
 		tree.overwrite(path, JSON.stringify(json, null, 2));
 		return tree;

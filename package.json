@@ -5,7 +5,7 @@
   "scripts": {
     "new": "schematics .:ng-tailwindcss --debug=false",
     "build": "tsc -p tsconfig.json",
-    "watch": "tsc -p tsconfig.json --watch",
+    "build:watch": "tsc -p tsconfig.json --watch",
     "test": "npm run build && jasmine src/**/*_spec.js",
     "pack": "npm pack",
     "publish": "npm publish --access=public"
